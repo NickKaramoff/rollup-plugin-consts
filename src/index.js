@@ -10,6 +10,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+import { stringify } from 'javascript-stringify';
+
 const moduleStart = 'consts:';
 
 /**
@@ -42,7 +45,7 @@ export default function constsPlugin(consts) {
                 return;
             }
 
-            return `export default ${JSON.stringify(consts[key])}`;
+            return `export default ${stringify(consts[key])}`;
         },
     };
 }

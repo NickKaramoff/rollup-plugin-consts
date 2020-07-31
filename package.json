@@ -1,5 +1,5 @@
 {
-    "name": "rollup-plugin-consts",
+    "name": "@nickkaramoff/rollup-plugin-consts",
     "version": "1.0.2",
     "description": "Import build time constants with Rollup",
     "main": "dist/rollup-plugin-consts.cjs.js",
@@ -16,9 +16,9 @@
         "test": "jest",
         "format": "prettier \"src/*.js\" \"test/**/*.js\" \"*.{js,ts,md}\" --write"
     },
-    "repository": "NotWoods/rollup-plugin-consts",
-    "bugs": "https://github.com/NotWoods/rollup-plugin-consts/issues",
-    "homepage": "https://github.com/NotWoods/rollup-plugin-consts#readme",
+    "repository": "NickKaramoff/rollup-plugin-consts",
+    "bugs": "https://github.com/NickKaramoff/rollup-plugin-consts/issues",
+    "homepage": "https://github.com/NickKaramoff/rollup-plugin-consts#readme",
     "keywords": [
         "rollup",
         "rollup-plugin",
@@ -28,14 +28,18 @@
     ],
     "author": "Jake Archibald",
     "contributors": [
-        "Tiger Oakes <contact@tigeroakes.com> (https://tigeroakes.com)"
+        "Tiger Oakes <contact@tigeroakes.com> (https://tigeroakes.com)",
+        "Nikita Karamov <nick@karamoff.dev> (https://karamoff.dev)"
     ],
     "license": "Apache-2.0",
     "peerDependencies": {
         "rollup": ">=1.15.0 <3"
     },
     "devDependencies": {
+        "@rollup/plugin-commonjs": "^14.0.0",
+        "@rollup/plugin-node-resolve": "^8.4.0",
         "@types/jest": "^25.2.1",
+        "javascript-stringify": "^2.0.1",
         "jest": "^25.4.0",
         "prettier": "^2.0.5",
         "rollup": "^2.7.3",
