@@ -1,6 +1,6 @@
 {
     "name": "@nickkaramoff/rollup-plugin-consts",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "Import build time constants with Rollup",
     "main": "dist/rollup-plugin-consts.cjs.js",
     "module": "dist/rollup-plugin-consts.es.js",
