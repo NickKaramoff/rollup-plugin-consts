@@ -128,3 +128,15 @@ test('const object', async () => {
     });
     expect(await executeBundle(bundle)).toEqual('Correct config found');
 });
+
+test('const function', async () => {
+    const bundle = await rollup({
+        input: 'test/samples/const-function.js',
+        plugins: [
+            consts({
+                sum: (a, b) => a + b,
+            }),
+        ],
+    });
+    expect(await executeBundle(bundle)).toEqual('Not today, Orwell');
+});
